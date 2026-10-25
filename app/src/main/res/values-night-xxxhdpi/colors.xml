@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vault_cream">#1D1C36</color>
+    <color name="vault_indigo">#F4B942</color>
+    <color name="vault_indigo_dark">#F4B942</color>
+    <color name="vault_charcoal">#F5F3FF</color>
+    <color name="vault_white">#2B2A4C</color>
+    <color name="vault_border">#F4B942</color>
+
+    <color name="colorPrimary">@color/vault_indigo</color>
+    <color name="colorPrimaryDark">@color/vault_indigo_dark</color>
+    <color name="colorBackground">@color/vault_cream</color>
+    <color name="colorTextPrimary">@color/vault_charcoal</color>
+    <color name="colorTextSecondary">#B8B6C8</color>
+</resources>

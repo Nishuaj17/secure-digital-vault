@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base palette -->
+    <color name="vault_cream">#FFF8ED</color>
+    <color name="vault_indigo">#2B2A4C</color>
+    <color name="vault_indigo_dark">#1D1C36</color>
+    <color name="vault_mustard">#F4B942</color>
+    <color name="vault_coral">#F26A5B</color>
+    <color name="vault_mint">#5FD6C2</color>
+    <color name="vault_charcoal">#22212E</color>
+    <color name="vault_white">#FFFFFF</color>
+    <color name="vault_border">#2B2A4C</color>
+
+    <!-- Semantic roles -->
+    <color name="colorPrimary">@color/vault_indigo</color>
+    <color name="colorPrimaryDark">@color/vault_indigo_dark</color>
+    <color name="colorAccent">@color/vault_mustard</color>
+    <color name="colorBackground">@color/vault_cream</color>
+    <color name="colorTextPrimary">@color/vault_charcoal</color>
+    <color name="colorTextSecondary">#6E6C80</color>
+
+    <!-- Password strength indicator colors (used later) -->
+    <color name="strength_weak">@color/vault_coral</color>
+    <color name="strength_medium">@color/vault_mustard</color>
+    <color name="strength_strong">@color/vault_mint</color>
+    <color name="strength_very_strong">#3FAE8C</color>
+
+    <!-- Dark mode variants (used in values-night/colors.xml, Phase 9) -->
+</resources>

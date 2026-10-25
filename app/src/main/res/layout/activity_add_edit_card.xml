@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vault_cream"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_mint"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="@color/vault_charcoal"
+            android:contentDescription="Back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/screenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Card"
+            android:textColor="@color/vault_charcoal"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/backButton"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/formCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/vault_white"
+            app:cardElevation="0dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/vault_border"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/screenTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView style="@style/FieldLabel" android:text="Card nickname" />
+                <EditText android:id="@+id/nicknameInput" style="@style/FieldInput" android:hint="e.g. My Travel Card" />
+
+                <TextView style="@style/FieldLabel" android:text="Card type" />
+                <EditText android:id="@+id/cardTypeInput" style="@style/FieldInput" android:hint="e.g. Visa, Mastercard" />
+
+                <TextView style="@style/FieldLabel" android:text="Cardholder name" />
+                <EditText android:id="@+id/cardholderInput" style="@style/FieldInput" android:hint="Name on card" />
+
+                <TextView style="@style/FieldLabel" android:text="Card number" />
+                <EditText android:id="@+id/cardNumberInput" style="@style/FieldInput" android:inputType="number" android:hint="1234 5678 9012 3456" />
+
+                <TextView style="@style/FieldLabel" android:text="Expiry (MM/YY)" />
+                <EditText android:id="@+id/expiryInput" style="@style/FieldInput" android:hint="e.g. 08/29" />
+
+                <TextView style="@style/FieldLabel" android:text="Notes (optional)" />
+                <EditText android:id="@+id/notesInput" style="@style/FieldInput" android:inputType="textMultiLine" android:minLines="2" android:hint="Any extra notes" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Note: for your safety, this vault never stores your card's CVV."
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="12sp"
+                    android:layout_marginTop="14dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/saveButton"
+            style="@style/VaultButton.Primary"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:text="Save Card"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/formCard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/errorText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/vault_coral"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/saveButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+ 

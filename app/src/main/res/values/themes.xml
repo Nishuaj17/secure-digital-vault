@@ -1,0 +1,65 @@
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.SecureVault" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+    </style>
+
+    <style name="Theme.SecureVault" parent="Base.Theme.SecureVault" />
+
+    <style name="VaultCard">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="strokeWidth">@dimen/card_border_width</item>
+        <item name="strokeColor">@color/vault_border</item>
+        <item name="cardBackgroundColor">@color/vault_white</item>
+    </style>
+
+    <style name="VaultButton.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/vault_mustard</item>
+        <item name="android:textColor">@color/vault_charcoal</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="VaultButton.Secondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/vault_indigo</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/vault_indigo</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="VaultText.Headline" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_headline</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+    </style>
+
+    <!-- Fix: define dimensions for labels used across all Add/Edit forms -->
+    <style name="FieldLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/vault_indigo</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="FieldInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/vault_charcoal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/field_underline</item>
+    </style>
+</resources>

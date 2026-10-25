@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <application
+        android:name=".SecureVaultApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SecureVault">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SecureVault">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.onboarding.SetupPinActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.onboarding.EnableBiometricActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.auth.LockScreenActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.passwords.AddEditPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.passwords.PasswordListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.notes.AddEditNoteActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.notes.NoteListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.documents.AddEditDocumentIdActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.documents.DocumentIdListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.cards.AddEditCardActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.cards.CardListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.recovery.AddEditRecoveryCodeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.recovery.RecoveryCodeListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.photos.PhotoListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.photos.PhotoViewerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.securedigitalvault.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <activity
+            android:name=".ui.documents.DocumentFileListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.search.GlobalSearchActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.settings.ChangePinActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+        <activity
+            android:name=".ui.settings.CategoryManagerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SecureVault" />
+    </application>
+
+</manifest>
